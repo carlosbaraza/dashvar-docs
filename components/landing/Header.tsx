@@ -10,7 +10,9 @@ export const Header: FC<Props> = (props) => {
       <div className="Header">
         <h1>Rapid and beautiful UI development</h1>
         <h2>
-          {"A tiny (<1.5KB) CSS Variables library. Yes! Only CSS Variables."}
+          {"A tiny (<1.5KB) "}
+          <strong>CSS Variables</strong> library. Yes! Only{" "}
+          <strong>CSS Variables</strong>.
         </h2>
 
         <div className="cta-container">

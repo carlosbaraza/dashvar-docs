@@ -1,5 +1,7 @@
+import Link from "next/link";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
+import { NavbarLink } from "./NavbarLink";
 
 type Props = {};
 
@@ -8,9 +10,14 @@ export const Navbar: FC<Props> = (props) => {
     <>
       <div className="Navbar">
         <div className="logo">
-          <h1>--dashvar</h1>
+          <Link href="/">
+            <a>
+              <h1>--dashvar</h1>
+            </a>
+          </Link>
         </div>
         <div className="inner">
+          <NavbarLink href="/docs">Documentation</NavbarLink>
           <a href="https://github.com/dashvars/dashvar" className="icon">
             <FaGithub />
           </a>
@@ -41,6 +48,10 @@ export const Navbar: FC<Props> = (props) => {
           display: flex;
           align-items: center;
           justify-content: flex-end;
+        }
+
+        .inner > :global(* + *) {
+          margin-left: var(--size-05);
         }
 
         .icon {

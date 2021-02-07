@@ -8,6 +8,9 @@ import Head from "next/head";
 import { CMS_NAME } from "../lib/constants";
 import Post from "../types/post";
 import { Header } from "../components/landing/Header";
+import React from "react";
+import { Features } from "../components/landing/Features";
+import { Example } from "../components/landing/Example";
 
 type Props = {
   allPosts: Post[];
@@ -24,6 +27,9 @@ const Index = ({ allPosts }: Props) => {
 
       <Layout>
         <Header />
+
+        <Example />
+
         <div>
           <Intro />
           {heroPost && (
