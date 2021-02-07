@@ -10,7 +10,7 @@ const Index = (props: Props) => {
     <>
       <div>
         <Head>
-          <title>Tailvars Docs</title>
+          <title>Dashvar Docs</title>
         </Head>
         <Layout>
           <Example />

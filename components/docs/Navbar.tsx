@@ -11,7 +11,7 @@ export const Navbar: FC<Props> = (props) => {
           <h1>--dashvar</h1>
         </div>
         <div className="inner">
-          <a href="https://github.com/carlosbaraza/tailvars" className="icon">
+          <a href="https://github.com/dashvars/dashvar" className="icon">
             <FaGithub />
           </a>
         </div>
