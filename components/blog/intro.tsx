@@ -6,8 +6,8 @@ const Intro = () => {
       <h1 className="text-6xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
         Blog.
       </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        Stories about rapid development of UIs.
+      <h4 className="text-center md:text-left text-2xl mt-5 md:pl-8">
+        Stories on rapid UI development.
       </h4>
     </section>
   );
