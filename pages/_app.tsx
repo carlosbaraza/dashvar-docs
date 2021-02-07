@@ -1,5 +1,5 @@
 import { AppProps } from "next/app";
-import "dashvar/dist/dist/base.css";
+import "dashvar/dist/base.css";
 import "dashvar/dist/dashvar.css";
 import "../styles/index.css";
 
