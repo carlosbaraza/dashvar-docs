@@ -16,7 +16,7 @@ export const Header: FC<Props> = (props) => {
         <div className="cta-container">
           <CtaButton href="https://github.com/dashvars/dashvar">
             <FaGithub />
-            <span>Github</span>
+            <span>GitHub</span>
           </CtaButton>
           <CtaButton href="/docs" type="secondary">
             Getting Started
