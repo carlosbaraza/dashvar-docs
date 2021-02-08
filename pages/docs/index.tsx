@@ -12,7 +12,7 @@ const Index = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Dashvar Docs</title>
+        <title>Getting Started | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>

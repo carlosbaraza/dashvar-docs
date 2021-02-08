@@ -1,11 +1,10 @@
 import Head from "next/head";
 import React from "react";
-import { Example } from "../../components/docs/Example";
-import { Layout } from "../../components/docs/Layout";
-import { SizingSystem } from "../../components/docs/sizing/SizingSystem";
 import { Heading1 } from "../../components/docs/Heading1";
 import { Heading2 } from "../../components/docs/Heading2";
+import { Layout } from "../../components/docs/Layout";
 import { Section } from "../../components/docs/Section";
+import { SizingSystem } from "../../components/docs/sizing/SizingSystem";
 
 type Props = {};
 
@@ -14,7 +13,7 @@ const Index = (props: Props) => {
     <>
       <div>
         <Head>
-          <title>Sizing System | dashvar</title>
+          <title>Sizing System | Dashvar Docs</title>
         </Head>
         <Layout>
           <Section>
