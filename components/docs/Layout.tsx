@@ -11,7 +11,7 @@ export const Layout: FC<Props> = (props) => {
         <div className="navbar">
           <Navbar />
         </div>
-        <div className="container">
+        <div className="Layout__Container">
           <div className="navigation">
             <Navigation />
           </div>
@@ -30,17 +30,22 @@ export const Layout: FC<Props> = (props) => {
           padding: 0 var(--size-06);
         }
 
-        .container {
+        .Layout__Container {
           display: flex;
           flex-grow: 1;
         }
 
         .navigation {
-          width: var(--size-13);
+          min-width: var(--size-13);
         }
 
         .content {
           padding: var(--size-07);
+          max-width: calc(100% - var(--size-13));
+        }
+
+        .content > :global(* + *) {
+          margin-top: var(--size-09);
         }
       `}</style>
     </>
