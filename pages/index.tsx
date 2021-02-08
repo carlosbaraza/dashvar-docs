@@ -11,6 +11,7 @@ import { Header } from "../components/landing/Header";
 import React from "react";
 import { Features } from "../components/landing/Features";
 import { Example } from "../components/landing/Example";
+import { WhySection } from "../components/landing/WhySection";
 
 type Props = {
   allPosts: Post[];
@@ -29,6 +30,8 @@ const Index = ({ allPosts }: Props) => {
         <Header />
 
         <Example />
+
+        <WhySection />
 
         <div>
           <Intro />

@@ -30,7 +30,6 @@ export const Header: FC<Props> = (props) => {
         .Header {
           max-width: var(--size-17);
           text-align: center;
-          padding: var(--size-09) 0;
         }
 
         h1 {

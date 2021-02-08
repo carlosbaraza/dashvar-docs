@@ -51,7 +51,7 @@ export const Navbar: FC<Props> = (props) => {
         }
 
         .inner > :global(* + *) {
-          margin-left: var(--size-05);
+          margin-left: var(--size-07);
         }
 
         .icon {

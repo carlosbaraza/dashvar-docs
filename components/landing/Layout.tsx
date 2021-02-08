@@ -10,7 +10,7 @@ export const Layout: FC<Props> = (props) => {
         <div className="navbar">
           <Navbar />
         </div>
-        <div className="container">{props.children}</div>
+        <div className="Layout__container">{props.children}</div>
       </div>
 
       <style jsx>{`
@@ -24,11 +24,16 @@ export const Layout: FC<Props> = (props) => {
           padding: 0 var(--size-06);
         }
 
-        .container {
+        .Layout__container {
           display: flex;
           flex-direction: column;
           flex-grow: 1;
           align-items: center;
+          padding: var(--size-10) 0;
+        }
+
+        .Layout__container > :global(* + *) {
+          margin-top: var(--size-10);
         }
       `}</style>
     </>

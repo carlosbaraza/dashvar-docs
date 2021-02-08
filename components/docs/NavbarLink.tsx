@@ -15,6 +15,9 @@ export const NavbarLink: FC<Props> = (props) => {
 
       <style jsx>{`
         .NavbarLink {
+          font-size: var(--font-size-2);
+          line-height: var(--line-height-2);
+          font-weight: var(--font-weight-semibold);
           color: var(--gray-500);
         }
 
