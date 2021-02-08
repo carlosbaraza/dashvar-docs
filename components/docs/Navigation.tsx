@@ -22,11 +22,14 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem href="/docs/border-radius">
             Border Radius
           </NavigationItem>
+          <NavigationItem href="/docs/z-index">z-index (WIP)</NavigationItem>
         </div>
 
         <div className="section">
           <SectionTitle>Typography</SectionTitle>
-          <NavigationItem href="/docs/font-weight">Font Weight</NavigationItem>
+          <NavigationItem href="/docs/font-weight">
+            Font Weight (WIP)
+          </NavigationItem>
         </div>
       </div>
 

@@ -1,10 +1,28 @@
-import React, { FC, ReactNode } from "react";
+import { clearAllBodyScrollLocks, disableBodyScroll } from "body-scroll-lock";
+import React, { FC, ReactNode, useRef, useState } from "react";
+import { FiMenu } from "react-icons/fi";
 import { Navbar } from "./Navbar";
 import { Navigation } from "./Navigation";
 
 type Props = { children: ReactNode };
 
 export const Layout: FC<Props> = (props) => {
+  const [isNavigationOpen, setIsNavigationOpen] = useState(false);
+
+  const navigationEl = useRef<HTMLDivElement>(null);
+
+  const openNavigation = () => {
+    if (navigationEl.current) {
+      disableBodyScroll(navigationEl.current);
+      setIsNavigationOpen(true);
+    }
+  };
+
+  const closeNavigation = () => {
+    clearAllBodyScrollLocks();
+    setIsNavigationOpen(false);
+  };
+
   return (
     <>
       <div className="Layout">
@@ -12,10 +30,14 @@ export const Layout: FC<Props> = (props) => {
           <Navbar />
         </div>
         <div className="Layout__Container">
-          <div className="navigation">
+          <div className="navigation-overlay" onClick={closeNavigation} />
+          <div ref={navigationEl} className="navigation">
             <Navigation />
           </div>
           <div className="content">{props.children}</div>
+          <button onClick={openNavigation} className="menu-button">
+            <FiMenu />
+          </button>
         </div>
       </div>
 
@@ -37,22 +59,66 @@ export const Layout: FC<Props> = (props) => {
         }
 
         .navigation {
-          position: sticky;
-          position: -webkit-sticky;
+          position: fixed;
+          background: var(--gray-100);
           overflow-y: scroll;
           top: 0;
           height: 100vh;
           min-width: var(--size-13);
+          left: ${isNavigationOpen ? 0 : "calc(-1 * var(--size-13))"};
+          z-index: 30;
+          padding: 0 var(--size-05);
+        }
+
+        .navigation-overlay {
+          display: ${isNavigationOpen ? "block" : "none"};
+          position: fixed;
+          top: 0;
+          left: 0;
+          background: var(--gray-800);
+          transition: 0.2s ease opacity;
+          opacity: var(--opacity-3);
+          height: 100vh;
+          width: 100vw;
+          z-index: 20;
         }
 
         .content {
-          padding: var(--size-07);
+          padding: var(--size-07) 0;
           flex-grow: 1;
-          max-width: calc(100% - var(--size-13));
+          max-width: 100%;
         }
 
         .content > :global(* + *) {
           margin-top: var(--size-09);
+        }
+
+        .menu-button {
+          position: fixed;
+          bottom: var(--size-05);
+          right: var(--size-05);
+          padding: var(--size-04);
+          border-radius: var(--border-radius-full);
+          background: var(--amber-400);
+          box-shadow: var(--box-shadow-3);
+          font-size: var(--font-size-4);
+          z-index: 10;
+        }
+
+        @media (min-width: 768px) {
+          .navigation {
+            position: sticky;
+            position: -webkit-sticky;
+            margin-left: 0;
+            padding: 0;
+          }
+          .content {
+            padding: var(--size-07);
+            max-width: calc(100% - var(--size-13));
+          }
+          .menu-button {
+            display: none;
+          }
         }
       `}</style>
     </>
