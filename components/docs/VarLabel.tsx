@@ -1,6 +1,12 @@
 import React, { FC } from "react";
 
-type Props = { children: string; subtitle?: string };
+type Props = {
+  children: string;
+  subtitle?: string;
+  color?: string;
+  varColor?: string;
+  subtitleColor?: string;
+};
 
 export const VarLabel: FC<Props> = (props) => {
   return (
@@ -17,25 +23,24 @@ export const VarLabel: FC<Props> = (props) => {
 
       <style jsx>{`
         .VarLabel {
-          color: var(--gray-800);
+          color: ${props.color ? props.color : "var(--gray-800)"};
           font-family: var(--font-family-mono);
         }
 
-        .VarLabel__pre {
-          color: var(--gray-400);
+        .VarLabel__pre,
+        .VarLabel__post {
+          color: ${props.varColor ? props.varColor : "var(--gray-400)"};
         }
 
         .VarLabel__body {
           font-weight: var(--font-weight-bold);
         }
 
-        .VarLabel__post {
-          color: var(--gray-400);
-        }
-
         .subtitle {
           font-size: var(--font-size-0);
-          color: var(--gray-600);
+          color: ${props.subtitleColor
+            ? props.subtitleColor
+            : "var(--gray-600)"};
         }
       `}</style>
     </>

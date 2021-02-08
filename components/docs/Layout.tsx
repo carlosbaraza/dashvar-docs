@@ -41,6 +41,7 @@ export const Layout: FC<Props> = (props) => {
 
         .content {
           padding: var(--size-07);
+          flex-grow: 1;
           max-width: calc(100% - var(--size-13));
         }
 

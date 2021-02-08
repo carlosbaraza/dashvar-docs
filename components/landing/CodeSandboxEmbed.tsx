@@ -1,6 +1,10 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 
-type Props = { embedId: string; title: string };
+type Props = { embedId: string; title: string; initialOpenedFile?: string };
+
+const defaultProps = {
+  initialOpenedFile: "index.html",
+};
 
 export const CodeSandboxEmbed: FC<Props> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -10,7 +14,7 @@ export const CodeSandboxEmbed: FC<Props> = (props) => {
     const el = ref.current;
     if (el && !codeSandboxInited) {
       el.innerHTML = `
-        <iframe src="https://codesandbox.io/embed/${props.embedId}?fontsize=14&hidenavigation=1&theme=dark&module=index.html,"
+        <iframe src="https://codesandbox.io/embed/${props.embedId}?fontsize=14&hidenavigation=1&theme=dark&module=${props.initialOpenedFile},"
         style="width:100%; height:600px; border:0; border-radius: 4px; overflow:hidden;"
         title="${props.title}"
         allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
@@ -34,3 +38,5 @@ export const CodeSandboxEmbed: FC<Props> = (props) => {
     </>
   );
 };
+
+CodeSandboxEmbed.defaultProps = defaultProps;
