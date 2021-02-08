@@ -18,5 +18,4 @@ html,
 body {
   background: var(--gray-100);
   font-family: var(--font-family-sans);
-  overflow-x: hidden;
 }

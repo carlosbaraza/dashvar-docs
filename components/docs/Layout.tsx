@@ -33,9 +33,15 @@ export const Layout: FC<Props> = (props) => {
         .Layout__Container {
           display: flex;
           flex-grow: 1;
+          align-items: flex-start;
         }
 
         .navigation {
+          position: sticky;
+          position: -webkit-sticky;
+          overflow-y: scroll;
+          top: 0;
+          height: 100vh;
           min-width: var(--size-13);
         }
 

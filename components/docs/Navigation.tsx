@@ -35,6 +35,7 @@ export const Navigation: FC<Props> = (props) => {
           display: flex;
           flex-direction: column;
           padding: var(--size-07) 0;
+          height: 200vh;
         }
 
         .section {
