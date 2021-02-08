@@ -9,6 +9,11 @@ export const Navigation: FC<Props> = (props) => {
     <>
       <div className="Navigation">
         <div className="section">
+          <SectionTitle>Getting Started</SectionTitle>
+          <NavigationItem href="/docs">Getting Started</NavigationItem>
+        </div>
+
+        <div className="section">
           <SectionTitle>General</SectionTitle>
           <NavigationItem href="/docs/sizing-system">
             Sizing System
