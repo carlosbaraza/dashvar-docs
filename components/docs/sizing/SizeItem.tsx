@@ -32,7 +32,7 @@ export const SizeItem: FC<Props> = (props) => {
         }
 
         .bar {
-          background: var(--blue-400);
+          background: var(--amber-500);
         }
 
         .overlay {
