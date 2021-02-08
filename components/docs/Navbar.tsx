@@ -1,11 +1,14 @@
 import Link from "next/link";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
+import { useIsMobile } from "../../lib/hooks/useIsMobile";
 import { NavbarLink } from "./NavbarLink";
 
 type Props = {};
 
 export const Navbar: FC<Props> = (props) => {
+  const isMobile = useIsMobile();
+
   return (
     <>
       <div className="Navbar">
@@ -17,7 +20,10 @@ export const Navbar: FC<Props> = (props) => {
           </Link>
         </div>
         <div className="inner">
-          <NavbarLink href="/docs">Documentation</NavbarLink>
+          <NavbarLink href="/docs">
+            {isMobile ? "Docs" : "Documentation"}
+          </NavbarLink>
+
           <a href="https://github.com/dashvars/dashvar" className="icon">
             <FaGithub />
           </a>
@@ -28,6 +34,7 @@ export const Navbar: FC<Props> = (props) => {
         .Navbar {
           height: var(--size-09);
           display: flex;
+          align-items: center;
         }
 
         .logo {

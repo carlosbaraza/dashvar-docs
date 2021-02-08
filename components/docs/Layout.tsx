@@ -1,5 +1,6 @@
 import { clearAllBodyScrollLocks, disableBodyScroll } from "body-scroll-lock";
-import React, { FC, ReactNode, useRef, useState } from "react";
+import { Router } from "next/router";
+import React, { FC, ReactNode, useEffect, useRef, useState } from "react";
 import { FiMenu } from "react-icons/fi";
 import { Navbar } from "./Navbar";
 import { Navigation } from "./Navigation";
@@ -10,6 +11,14 @@ export const Layout: FC<Props> = (props) => {
   const [isNavigationOpen, setIsNavigationOpen] = useState(false);
 
   const navigationEl = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const enableScrollAfterRoute = () => {
+      clearAllBodyScrollLocks();
+    };
+    Router.events.on("routeChangeStart", enableScrollAfterRoute);
+    return () => Router.events.off("routeChangeStart", enableScrollAfterRoute);
+  }, []);
 
   const openNavigation = () => {
     if (navigationEl.current) {
@@ -68,6 +77,7 @@ export const Layout: FC<Props> = (props) => {
           left: ${isNavigationOpen ? 0 : "calc(-1 * var(--size-13))"};
           z-index: 30;
           padding: 0 var(--size-05);
+          transition: left 0.3s ease-out;
         }
 
         .navigation-overlay {
@@ -97,7 +107,7 @@ export const Layout: FC<Props> = (props) => {
           position: fixed;
           bottom: var(--size-05);
           right: var(--size-05);
-          padding: var(--size-04);
+          padding: var(--size-05);
           border-radius: var(--border-radius-full);
           background: var(--amber-400);
           box-shadow: var(--box-shadow-3);
