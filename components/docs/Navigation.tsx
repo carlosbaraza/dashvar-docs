@@ -70,9 +70,7 @@ export const Navigation: FC<Props> = (props) => {
           <SectionTitle>Typography</SectionTitle>
           <NavigationItem href="/docs/font-family">Font Family</NavigationItem>
           <NavigationItem href="/docs/font-size">Font Size</NavigationItem>
-          <NavigationItem disabled href="/docs/line-height">
-            Line Height (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/line-height">Line Height</NavigationItem>
           <NavigationItem href="/docs/font-weight">Font Weight</NavigationItem>
           <NavigationItem href="/docs/letter-spacing">
             Letter Spacing
