@@ -2,6 +2,7 @@ import { clearAllBodyScrollLocks, disableBodyScroll } from "body-scroll-lock";
 import { Router } from "next/router";
 import React, { FC, ReactNode, useEffect, useRef, useState } from "react";
 import { FiMenu } from "react-icons/fi";
+import { Footer } from "./Footer";
 import { Navbar } from "./Navbar";
 import { Navigation } from "./Navigation";
 
@@ -48,6 +49,7 @@ export const Layout: FC<Props> = (props) => {
             <FiMenu />
           </button>
         </div>
+        <Footer />
       </div>
 
       <style jsx>{`
@@ -59,6 +61,10 @@ export const Layout: FC<Props> = (props) => {
           max-width: var(--size-18);
           margin: 0 auto;
           padding: 0 var(--size-06);
+        }
+
+        .Layout > :global(* + *) {
+          margin-top: var(--size-07);
         }
 
         .Layout__Container {
