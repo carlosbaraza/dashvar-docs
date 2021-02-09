@@ -18,9 +18,13 @@ const Index = (props: Props) => {
         <Section>
           <Heading1>Getting Started</Heading1>
           <p>
-            Dashvar is a collection of CSS Variables that will help you setting
-            up a design system. There is a multitude of reasons why having a
-            design system is beneficial to your development.
+            <strong>Dashvar</strong> is a collection of CSS Variables that will
+            help you setting up a design system. There is a multitude of reasons
+            why having a design system is beneficial to your development.
+          </p>
+          <p>
+            Just a few <strong>carefully selected CSS Variables</strong> could
+            make a huge impact in your development experience.
           </p>
           <p>
             The easiest way to get started is by adding the tiny {"(<1.5KB)"}{" "}
