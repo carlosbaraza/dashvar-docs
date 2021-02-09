@@ -58,9 +58,7 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem disabled href="/docs/outline">
             Outline (WIP)
           </NavigationItem>
-          <NavigationItem disabled href="/docs/opacity">
-            Opacity (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/opacity">Opacity</NavigationItem>
           <NavigationItem disabled href="/docs/z-index">
             Z-Index (WIP)
           </NavigationItem>
