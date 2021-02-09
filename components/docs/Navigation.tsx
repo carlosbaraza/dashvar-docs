@@ -68,9 +68,7 @@ export const Navigation: FC<Props> = (props) => {
 
         <div className="section">
           <SectionTitle>Typography</SectionTitle>
-          <NavigationItem disabled href="/docs/font-family">
-            Font Family (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/font-family">Font Family</NavigationItem>
           <NavigationItem href="/docs/font-size">Font Size</NavigationItem>
           <NavigationItem disabled href="/docs/line-height">
             Line Height (WIP)
