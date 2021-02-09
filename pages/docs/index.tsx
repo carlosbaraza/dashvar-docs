@@ -8,7 +8,7 @@ import { Section } from "../../components/docs/Section";
 
 type Props = {};
 
-const Index = (props: Props) => {
+const DocsIndex = (props: Props) => {
   return (
     <>
       <Head>
@@ -73,4 +73,4 @@ import "dashvar/dist/dashvar.css";`}
   );
 };
 
-export default Index;
+export default DocsIndex;

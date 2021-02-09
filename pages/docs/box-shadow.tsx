@@ -9,7 +9,7 @@ import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
-export default (props: Props) => {
+export const DocsBoxShadowPage = (props: Props) => {
   return (
     <>
       <Head>
@@ -40,3 +40,5 @@ export default (props: Props) => {
     </>
   );
 };
+
+export default DocsBoxShadowPage;

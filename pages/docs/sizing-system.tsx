@@ -8,7 +8,7 @@ import { SizingSystem } from "../../components/docs/sizing/SizingSystem";
 
 type Props = {};
 
-const Index = (props: Props) => {
+const DocsSizingSystem = (props: Props) => {
   return (
     <>
       <div>
@@ -42,4 +42,4 @@ const Index = (props: Props) => {
   );
 };
 
-export default Index;
+export default DocsSizingSystem;
