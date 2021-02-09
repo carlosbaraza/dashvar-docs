@@ -3,7 +3,7 @@ import React, { FC, useEffect, useRef, useState } from "react";
 type Props = { embedId: string; title: string; initialOpenedFile?: string };
 
 const defaultProps = {
-  initialOpenedFile: "index.html",
+  initialOpenedFile: "styles.css,index.html",
 };
 
 export const CodeSandboxEmbed: FC<Props> = (props) => {

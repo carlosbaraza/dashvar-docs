@@ -33,7 +33,7 @@ export const DocsBorderRadiusPage = (props: Props) => {
           <CodeSandboxEmbed
             title="dashvar-border-radius-1"
             embedId="dashvar-border-radius-1-nx8lr"
-            initialOpenedFile="component.html"
+            initialOpenedFile="styles.css,index.html"
           />
         </Section>
       </Layout>

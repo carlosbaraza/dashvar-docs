@@ -34,7 +34,7 @@ export const DocsBoxShadowPage = (props: Props) => {
           <CodeSandboxEmbed
             title="dashvar-box-shadow-1"
             embedId="dashvar-box-shadow-1-p72rm"
-            initialOpenedFile="component.html"
+            initialOpenedFile="styles.css,index.html"
           />
         </Section>
       </Layout>
