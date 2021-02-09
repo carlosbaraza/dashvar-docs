@@ -123,7 +123,7 @@ export const Layout: FC<Props> = (props) => {
             padding: 0;
           }
           .content {
-            padding: var(--size-07);
+            padding: var(--size-07) 0 0 var(--size-07);
             max-width: calc(100% - var(--size-13));
           }
           .menu-button {
