@@ -75,9 +75,7 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem disabled href="/docs/line-height">
             Line Height (WIP)
           </NavigationItem>
-          <NavigationItem disabled href="/docs/font-weight">
-            Font Weight (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/font-weight">Font Weight</NavigationItem>
           <NavigationItem disabled href="/docs/letter-spacing">
             Letter Spacing (WIP)
           </NavigationItem>
