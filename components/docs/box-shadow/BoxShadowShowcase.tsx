@@ -16,9 +16,15 @@ export const BoxShadowShowcase: FC<Props> = (props) => {
       <style jsx>{`
         .BoxShadowShowcase {
           display: grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr;
           grid-column-gap: var(--size-08);
           grid-row-gap: var(--size-08);
+        }
+
+        @media (min-width: 1024px) {
+          .BoxShadowShowcase {
+            grid-template-columns: 1fr 1fr;
+          }
         }
       `}</style>
     </>

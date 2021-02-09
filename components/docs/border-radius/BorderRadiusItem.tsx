@@ -19,8 +19,9 @@ export const BorderRadiusItem: FC<Props> = (props) => {
         .BorderRadiusItem {
           display: flex;
           justify-content: center;
+          text-align: center;
           background: var(--amber-100);
-          padding: var(--size-09);
+          padding: var(--size-09) var(--size-04);
           border-radius: ${props.variable.value};
           border: 2px solid var(--amber-900);
         }

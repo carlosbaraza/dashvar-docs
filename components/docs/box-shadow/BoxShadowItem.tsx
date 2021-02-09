@@ -17,6 +17,7 @@ export const BoxShadowItem: FC<Props> = (props) => {
         .BoxShadowItem {
           display: flex;
           justify-content: center;
+          text-align: center;
           background: var(--white);
           padding: var(--size-05);
           border-radius: var(--size-04);
