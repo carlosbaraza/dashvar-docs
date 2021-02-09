@@ -71,9 +71,7 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem disabled href="/docs/font-family">
             Font Family (WIP)
           </NavigationItem>
-          <NavigationItem disabled href="/docs/font-size">
-            Font Size (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/font-size">Font Size</NavigationItem>
           <NavigationItem disabled href="/docs/line-height">
             Line Height (WIP)
           </NavigationItem>
