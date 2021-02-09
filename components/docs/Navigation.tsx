@@ -14,8 +14,18 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem disabled href="/docs/base-styles">
             Base Styles (WIP)
           </NavigationItem>
+          <NavigationItem disabled href="/docs/vs-code-extension">
+            VS Code Extension (WIP)
+          </NavigationItem>
+        </div>
+
+        <div className="section">
+          <SectionTitle>Customizing</SectionTitle>
           <NavigationItem disabled href="/docs/customizing">
             Customizing (WIP)
+          </NavigationItem>
+          <NavigationItem disabled href="/docs/custom-export">
+            Custom Export (WIP)
           </NavigationItem>
         </div>
 
@@ -28,8 +38,8 @@ export const Navigation: FC<Props> = (props) => {
 
         <div className="section">
           <SectionTitle>Colours</SectionTitle>
-          <NavigationItem disabled href="/docs/colour-palette">
-            Colour Palette (WIP)
+          <NavigationItem href="/docs/colour-palette">
+            Colour Palette
           </NavigationItem>
           <NavigationItem disabled href="/docs/background-gradients">
             Background Gradients (WIP)
@@ -82,6 +92,16 @@ export const Navigation: FC<Props> = (props) => {
           </NavigationItem>
           <NavigationItem disabled href="/docs/animations">
             Animations (WIP)
+          </NavigationItem>
+        </div>
+
+        <div className="section">
+          <SectionTitle>NPM Module</SectionTitle>
+          <NavigationItem disabled href="/docs/js-variables">
+            JS Variables (WIP)
+          </NavigationItem>
+          <NavigationItem disabled href="/docs/js-variables">
+            Generate CSS (WIP)
           </NavigationItem>
         </div>
       </div>

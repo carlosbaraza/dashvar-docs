@@ -12,7 +12,7 @@
     "@types/body-scroll-lock": "^2.6.1",
     "body-scroll-lock": "^3.1.5",
     "classnames": "2.2.6",
-    "dashvar": "0.0.3",
+    "dashvar": "^0.1.3",
     "date-fns": "2.10.0",
     "gray-matter": "4.0.2",
     "next": "latest",

@@ -44,7 +44,10 @@ const DocsIndex = (props: Props) => {
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/gh/dashvars/dashvar/dist/dashvar.css"
-/>`}
+/>
+
+<!-- Optional tiny helpers (<1KB). Body media classes. -->
+<script src="https://cdn.jsdelivr.net/gh/dashvars/dashvar/dist/dashvar-helpers.js"></script>`}
           </Code>
         </Section>
         <Section>
@@ -65,7 +68,8 @@ yarn add dashvar`}</Code>
           </p>
           <Code language="typescript">
             {`import "dashvar/dist/base.css"; // Optional
-import "dashvar/dist/dashvar.css";`}
+import "dashvar/dist/dashvar.css";
+import "dashvar/dist/dashvar-helpers"; // Optional for media queries`}
           </Code>
         </Section>
       </Layout>
