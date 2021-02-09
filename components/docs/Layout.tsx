@@ -2,7 +2,7 @@ import { clearAllBodyScrollLocks, disableBodyScroll } from "body-scroll-lock";
 import { Router } from "next/router";
 import React, { FC, ReactNode, useEffect, useRef, useState } from "react";
 import { FiMenu } from "react-icons/fi";
-import { Footer } from "./Footer";
+import { Footer } from "../Footer";
 import { Navbar } from "./Navbar";
 import { Navigation } from "./Navigation";
 
@@ -44,12 +44,14 @@ export const Layout: FC<Props> = (props) => {
           <div ref={navigationEl} className="navigation">
             <Navigation />
           </div>
-          <div className="content">{props.children}</div>
+          <div className="content">
+            {props.children}
+            <Footer />
+          </div>
           <button onClick={openNavigation} className="menu-button">
             <FiMenu />
           </button>
         </div>
-        <Footer />
       </div>
 
       <style jsx>{`
@@ -127,11 +129,14 @@ export const Layout: FC<Props> = (props) => {
             position: -webkit-sticky;
             margin-left: 0;
             padding: 0;
+            margin-top: calc(-1 * var(--size-06));
           }
+
           .content {
-            padding: var(--size-07) 0 0 var(--size-07);
+            padding: 0 0 0 var(--size-07);
             max-width: calc(100% - var(--size-13));
           }
+
           .menu-button {
             display: none;
           }

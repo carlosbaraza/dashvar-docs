@@ -1,5 +1,6 @@
 import React, { FC, ReactNode } from "react";
 import { Navbar } from "../docs/Navbar";
+import { Footer } from "../Footer";
 
 type Props = { children: ReactNode };
 
@@ -11,6 +12,7 @@ export const Layout: FC<Props> = (props) => {
           <Navbar />
         </div>
         <div className="Layout__container">{props.children}</div>
+        <Footer />
       </div>
 
       <style jsx>{`
@@ -29,11 +31,14 @@ export const Layout: FC<Props> = (props) => {
           flex-direction: column;
           flex-grow: 1;
           align-items: center;
-          padding: var(--size-10) 0;
         }
 
         .Layout__container > :global(* + *) {
           margin-top: var(--size-10);
+        }
+
+        .Layout > :global(* + *) {
+          margin-top: var(--size-08);
         }
       `}</style>
     </>
