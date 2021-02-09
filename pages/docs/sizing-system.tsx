@@ -50,7 +50,8 @@ const DocsSizingSystem = (props: Props) => {
               <code>:root</code> pseudo-class:
             </p>
             <Code language="css">{`:root {
-  --size-sm: 10px; 
+  --size-xs: 5px; 
+  --size-s: 10px; 
   --size-m: 20px; 
   --size-l: 40px; 
   --size-xl: 80px; 
