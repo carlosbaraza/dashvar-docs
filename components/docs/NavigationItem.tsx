@@ -5,14 +5,19 @@ type Props = {
   href: string;
   as?: string;
   children: ReactNode;
+  disabled?: boolean;
 };
 
 export const NavigationItem: FC<Props> = (props) => {
   return (
     <>
-      <Link href={props.href} as={props.as}>
-        <a className="NavigationItem">{props.children}</a>
-      </Link>
+      {props.disabled ? (
+        <div className="NavigationItem disabled">{props.children}</div>
+      ) : (
+        <Link href={props.href} as={props.as}>
+          <a className="NavigationItem">{props.children}</a>
+        </Link>
+      )}
 
       <style jsx>{`
         .NavigationItem {
@@ -23,6 +28,10 @@ export const NavigationItem: FC<Props> = (props) => {
 
         .NavigationItem:hover {
           color: var(--black);
+        }
+
+        .NavigationItem.disabled {
+          color: var(--gray-300);
         }
       `}</style>
     </>
