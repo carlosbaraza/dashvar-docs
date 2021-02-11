@@ -60,9 +60,7 @@ export const Navigation: FC<Props> = (props) => {
             Outline Offset
           </NavigationItem>
           <NavigationItem href="/docs/opacity">Opacity</NavigationItem>
-          <NavigationItem disabled href="/docs/z-index">
-            Z-Index (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/z-index">Z-Index</NavigationItem>
         </div>
 
         <div className="section">
