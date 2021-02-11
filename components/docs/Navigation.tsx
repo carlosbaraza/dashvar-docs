@@ -58,6 +58,9 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem disabled href="/docs/outline">
             Outline (WIP)
           </NavigationItem>
+          <NavigationItem disabled href="/docs/outline-offset">
+            Outline Offset (WIP)
+          </NavigationItem>
           <NavigationItem href="/docs/opacity">Opacity</NavigationItem>
           <NavigationItem disabled href="/docs/z-index">
             Z-Index (WIP)
@@ -77,11 +80,20 @@ export const Navigation: FC<Props> = (props) => {
 
         <div className="section">
           <SectionTitle>Transitions and Animations</SectionTitle>
-          <NavigationItem disabled href="/docs/transitions">
-            Transitions (WIP)
+          <NavigationItem disabled href="/docs/transition">
+            Transition (WIP)
           </NavigationItem>
-          <NavigationItem disabled href="/docs/animations">
-            Animations (WIP)
+          <NavigationItem disabled href="/docs/transition-duration">
+            Transition Duration (WIP)
+          </NavigationItem>
+          <NavigationItem disabled href="/docs/transition-timing-function">
+            Transition Timing Function (WIP)
+          </NavigationItem>
+          <NavigationItem disabled href="/docs/transition-delay">
+            Transition Delay (WIP)
+          </NavigationItem>
+          <NavigationItem disabled href="/docs/animation">
+            Animation (WIP)
           </NavigationItem>
         </div>
 

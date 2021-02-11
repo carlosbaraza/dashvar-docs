@@ -16,12 +16,12 @@ export const Section: FC<Props> = (props) => {
         }
 
         .Section :global(a) {
-          color: var(--amber-800);
+          color: var(--yellow-800);
           font-weight: var(--font-weight-bold);
         }
 
         .Section :global(a:hover) {
-          color: var(--amber-500);
+          color: var(--yellow-500);
         }
 
         .Section :global(code) {

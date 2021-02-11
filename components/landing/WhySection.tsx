@@ -1,5 +1,4 @@
 import React, { FC } from "react";
-import { CodeSandboxEmbed } from "./CodeSandboxEmbed";
 
 type Props = {};
 
@@ -59,8 +58,8 @@ export const WhySection: FC<Props> = (props) => {
           break-inside: avoid;
           margin-bottom: var(--size-06);
           padding: var(--size-06);
-          background: var(--amber-200);
-          color: var(--amber-900);
+          background: var(--yellow-200);
+          color: var(--yellow-900);
           font-size: var(--font-size-5);
           font-weight: var(--font-weight-bold);
           border-radius: var(--border-radius-5);

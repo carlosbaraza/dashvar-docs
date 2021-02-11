@@ -20,7 +20,7 @@ export const CtaButton: FC<Props> = (props) => {
           display: flex;
           align-items: center;
           background: ${props.type === "secondary"
-            ? "var(--amber-300)"
+            ? "var(--yellow-300)"
             : "var(--gray-200)"};
           padding: var(--size-06) var(--size-07);
           border-radius: var(--border-radius-5);
@@ -36,7 +36,7 @@ export const CtaButton: FC<Props> = (props) => {
 
         .CtaButton:hover {
           background: ${props.type === "secondary"
-            ? "var(--amber-400)"
+            ? "var(--yellow-400)"
             : "var(--gray-300)"};
         }
       `}</style>

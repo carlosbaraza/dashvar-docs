@@ -42,7 +42,7 @@ export const LineHeightItem: FC<Props> = (props) => {
             ${props.variable.key.replace("line-height", "font-size")}
           );
           line-height: ${props.variable.value};
-          background: var(--amber-200);
+          background: var(--yellow-200);
         }
       `}</style>
     </>

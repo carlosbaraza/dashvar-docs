@@ -38,7 +38,7 @@ export const OpacityItem: FC<Props> = (props) => {
           top: 0;
           left: 0;
           opacity: ${props.variable.value};
-          background: var(--amber-400);
+          background: var(--yellow-400);
           border-radius: var(--size-04);
         }
       `}</style>

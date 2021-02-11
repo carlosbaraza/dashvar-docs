@@ -117,7 +117,7 @@ export const Layout: FC<Props> = (props) => {
           right: var(--size-05);
           padding: var(--size-05);
           border-radius: var(--border-radius-full);
-          background: var(--amber-400);
+          background: var(--yellow-400);
           box-shadow: var(--box-shadow-3);
           font-size: var(--font-size-4);
           z-index: 10;

@@ -22,10 +22,10 @@ export const Footer: FC<Props> = (props) => {
         }
 
         a {
-          color: var(--amber-800);
+          color: var(--yellow-800);
         }
         a:hover {
-          color: var(--amber-600);
+          color: var(--yellow-600);
         }
       `}</style>
     </>

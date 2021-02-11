@@ -10,7 +10,7 @@ export const BorderRadiusItem: FC<Props> = (props) => {
   return (
     <>
       <div className="BorderRadiusItem">
-        <VarLabel color="var(--amber-900)" varColor="var(--amber-600)">
+        <VarLabel color="var(--yellow-900)" varColor="var(--yellow-600)">
           {props.variable.key}
         </VarLabel>
       </div>
@@ -20,10 +20,10 @@ export const BorderRadiusItem: FC<Props> = (props) => {
           display: flex;
           justify-content: center;
           text-align: center;
-          background: var(--amber-100);
+          background: var(--yellow-100);
           padding: var(--size-09) var(--size-04);
           border-radius: ${props.variable.value};
-          border: 2px solid var(--amber-900);
+          border: 2px solid var(--yellow-900);
         }
       `}</style>
     </>
