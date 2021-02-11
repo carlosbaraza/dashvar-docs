@@ -47,7 +47,7 @@ export const Navigation: FC<Props> = (props) => {
         </div>
 
         <div className="section">
-          <SectionTitle>Block</SectionTitle>
+          <SectionTitle>Box</SectionTitle>
           <NavigationItem href="/docs/box-shadow">Box Shadow</NavigationItem>
           <NavigationItem href="/docs/border-radius">
             Border Radius
@@ -55,11 +55,9 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem href="/docs/border-width">
             Border Width
           </NavigationItem>
-          <NavigationItem disabled href="/docs/outline">
-            Outline (WIP)
-          </NavigationItem>
-          <NavigationItem disabled href="/docs/outline-offset">
-            Outline Offset (WIP)
+          <NavigationItem href="/docs/outline">Outline</NavigationItem>
+          <NavigationItem href="/docs/outline-offset">
+            Outline Offset
           </NavigationItem>
           <NavigationItem href="/docs/opacity">Opacity</NavigationItem>
           <NavigationItem disabled href="/docs/z-index">
