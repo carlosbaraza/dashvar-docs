@@ -52,8 +52,8 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem href="/docs/border-radius">
             Border Radius
           </NavigationItem>
-          <NavigationItem disabled href="/docs/border-width">
-            Border Width (WIP)
+          <NavigationItem href="/docs/border-width">
+            Border Width
           </NavigationItem>
           <NavigationItem disabled href="/docs/outline">
             Outline (WIP)
