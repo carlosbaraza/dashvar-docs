@@ -41,8 +41,8 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem href="/docs/colour-palette">
             Colour Palette
           </NavigationItem>
-          <NavigationItem disabled href="/docs/background-gradients">
-            Background Gradients (WIP)
+          <NavigationItem href="/docs/background-gradients">
+            Background Gradients
           </NavigationItem>
         </div>
 

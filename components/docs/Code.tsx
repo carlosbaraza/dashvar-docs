@@ -3,6 +3,7 @@ import React, { FC, useEffect, useRef } from "react";
 type Props = {
   language: "html" | "bash" | "css" | "json" | "typescript";
   children: string;
+  noTopBorderRadius?: boolean;
 };
 
 export const Code: FC<Props> = (props) => {
@@ -29,7 +30,9 @@ export const Code: FC<Props> = (props) => {
           font-size: var(--font-size-1);
           line-height: 1.5;
           background: var(--gray-800);
-          border-radius: var(--border-radius-3);
+          border-radius: ${props.noTopBorderRadius
+            ? `0 0 var(--border-radius-3) var(--border-radius-3) !important`
+            : "var(--border-radius-3)"};
           color: var(--white);
           padding: var(--size-05);
         }
