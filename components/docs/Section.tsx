@@ -9,6 +9,8 @@ export const Section: FC<Props> = (props) => {
 
       <style jsx>{`
         .Section {
+          display: flex;
+          flex-direction: column;
         }
 
         .Section > :global(* + *) {
@@ -43,6 +45,10 @@ export const Section: FC<Props> = (props) => {
           align-items: baseline;
           display: inline-flex;
           vertical-align: baseline;
+        }
+
+        .Section :global(img) {
+          align-self: center;
         }
       `}</style>
     </>

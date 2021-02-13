@@ -11,9 +11,7 @@ export const Navigation: FC<Props> = (props) => {
         <div className="section">
           <SectionTitle>Getting Started</SectionTitle>
           <NavigationItem href="/docs">Getting Started</NavigationItem>
-          <NavigationItem disabled href="/docs/base-styles">
-            Base Styles (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/base-styles">Base Styles</NavigationItem>
           <NavigationItem disabled href="/docs/vs-code-extension">
             VS Code Extension (WIP)
           </NavigationItem>
