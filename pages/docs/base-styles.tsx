@@ -65,7 +65,7 @@ const DocsBaseStyles = (props: Props) => {
 
           <CodePenEmbed penId="zYoNjwN" />
           <p>Other common elements would look as follows:</p>
-          <CodePenEmbed penId="gOLgzxZ" />
+          <CodePenEmbed penId="gOLgzxZ" height={500} />
         </Section>
         <Section>
           <Heading2>How to use Base Styles</Heading2>
