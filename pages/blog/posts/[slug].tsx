@@ -8,7 +8,6 @@ import PostBody from "../../../components/blog/post-body";
 import PostHeader from "../../../components/blog/post-header";
 import PostTitle from "../../../components/blog/post-title";
 import { getAllPosts, getPostBySlug } from "../../../lib/api";
-import { CMS_NAME } from "../../../lib/constants";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import PostType from "../../../types/post";
 
@@ -33,9 +32,7 @@ const Post = ({ post, morePosts, preview }: Props) => {
           <>
             <article className="mb-32">
               <Head>
-                <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
-                </title>
+                <title>{post.title} | Dashvar Blog</title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader

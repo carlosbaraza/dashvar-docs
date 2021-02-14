@@ -1,6 +1,6 @@
 {
-  "name": "Next.js",
-  "short_name": "Next.js",
+  "name": "Dashvar CSS Variables Library",
+  "short_name": "Dashvar",
   "icons": [
     {
       "src": "/favicons/android-chrome-192x192.png",

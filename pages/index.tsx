@@ -1,17 +1,14 @@
-import Container from "../components/blog/container";
-import MoreStories from "../components/blog/more-stories";
+import Head from "next/head";
+import React from "react";
 import HeroPost from "../components/blog/hero-post";
 import Intro from "../components/blog/intro";
-import { Layout } from "../components/landing/Layout";
-import { getAllPosts } from "../lib/api";
-import Head from "next/head";
-import { CMS_NAME } from "../lib/constants";
-import Post from "../types/post";
-import { Header } from "../components/landing/Header";
-import React from "react";
-import { Features } from "../components/landing/Features";
+import MoreStories from "../components/blog/more-stories";
 import { Example } from "../components/landing/Example";
+import { Header } from "../components/landing/Header";
+import { Layout } from "../components/landing/Layout";
 import { WhySection } from "../components/landing/WhySection";
+import { getAllPosts } from "../lib/api";
+import Post from "../types/post";
 
 type Props = {
   allPosts: Post[];
@@ -23,7 +20,7 @@ const Index = ({ allPosts }: Props) => {
   return (
     <>
       <Head>
-        <title>Next.js Blog Example with {CMS_NAME}</title>
+        <title>Dashvar | CSS Variables Library</title>
       </Head>
 
       <Layout>

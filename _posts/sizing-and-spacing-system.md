@@ -15,7 +15,7 @@ useful to limit the choices you have to make when designing a UI, because you ca
 
 Another great benefit that comes with using a sizing system is that your UIs and code will be more consistent and clean. Vertical and horizontal rhythms will be respected, and that has an impact over the look and feel of your interface.
 
-## Dahsvar Sizing System
+## Dashvar Sizing System
 
 You can read more about [Dashvar's Spacing and Sizing System in the documentation](https://dashvar.com/docs/sizing-system).
 
