@@ -15,7 +15,7 @@ export const Navbar: FC<Props> = (props) => {
         <div className="logo">
           <Link href="/">
             <a>
-              <h1>--dashvar</h1>
+              <img src="/assets/images/icon/512w/dashvar-logo-horizontal-black-512w.png" />
             </a>
           </Link>
         </div>
@@ -40,7 +40,13 @@ export const Navbar: FC<Props> = (props) => {
         .logo {
           display: flex;
           align-items: center;
-          width: var(--size-13);
+          padding: var(--size-05);
+          position: relative;
+          cursor: pointer;
+        }
+
+        .logo :global(img) {
+          width: var(--size-12);
         }
 
         h1 {
