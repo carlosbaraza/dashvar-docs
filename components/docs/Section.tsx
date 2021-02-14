@@ -50,6 +50,15 @@ export const Section: FC<Props> = (props) => {
         .Section :global(img) {
           align-self: center;
         }
+
+        .Section :global(ul) {
+          padding-left: 2em;
+        }
+
+        .Section :global(ul li) {
+          list-style: disc;
+          margin-top: 0.5em;
+        }
       `}</style>
     </>
   );

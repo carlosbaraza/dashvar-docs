@@ -11,9 +11,12 @@ export const Navigation: FC<Props> = (props) => {
         <div className="section">
           <SectionTitle>Getting Started</SectionTitle>
           <NavigationItem href="/docs">Getting Started</NavigationItem>
+          <NavigationItem href="/docs/card-component-example">
+            Card Component Example
+          </NavigationItem>
           <NavigationItem href="/docs/base-styles">Base Styles</NavigationItem>
-          <NavigationItem disabled href="/docs/vs-code-extension">
-            VS Code Extension (WIP)
+          <NavigationItem href="/docs/vs-code-extension">
+            VS Code Extension
           </NavigationItem>
         </div>
 
@@ -88,6 +91,13 @@ export const Navigation: FC<Props> = (props) => {
           </NavigationItem>
           <NavigationItem disabled href="/docs/animation">
             Animation (WIP)
+          </NavigationItem>
+        </div>
+
+        <div className="section">
+          <SectionTitle>Helpers</SectionTitle>
+          <NavigationItem href="/docs/media-body-classes">
+            Media body classes
           </NavigationItem>
         </div>
 
