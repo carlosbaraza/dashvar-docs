@@ -25,30 +25,56 @@ const DocsIndex = (props: Props) => {
           </p>
 
           <p>The logic for the media classes is as follows:</p>
-          <Code language="typescript">{`if (screenWidth > 640) bodyClasses.push("sm");
+          <Code language="typescript">{`if (screenWidth > 480) bodyClasses.push("xs");
+if (screenWidth > 640) bodyClasses.push("sm");
 if (screenWidth > 768) bodyClasses.push("md");
 if (screenWidth > 1024) bodyClasses.push("lg");
 if (screenWidth > 1280) bodyClasses.push("xl");
 if (screenWidth > 1536) bodyClasses.push("2xl");`}</Code>
-
+          <p>
+            <a href="https://github.com/dashvars/dashvar/blob/master/src/helpers/dashvar-helpers.js">
+              See full source code, available on the official GitHub repository
+            </a>
+            .
+          </p>
           <p>
             For example:
             <ul>
               <li>
-                If the screen was 500px wide, the body element would have no
+                If the screen was 400px wide, the body element would have no
                 classes
               </li>
               <li>
-                If the screen was 800px wide, the body would have two extra
-                classes: <code>sm</code> and <code>md</code>
+                If the screen was 800px wide, the body would have three extra
+                classes: <code>xs</code>, <code>sm</code> and <code>md</code>
               </li>
               <li>
-                If the screen was 2000px wide, the body would have five extra
-                classes: <code>sm</code>, <code>md</code>, <code>lg</code>,{" "}
-                <code>xl</code> and <code>2xl</code>
+                If the screen was 2000px wide, the body would have six extra
+                classes: <code>xs</code>, <code>sm</code>, <code>md</code>,{" "}
+                <code>lg</code>, <code>xl</code> and <code>2xl</code>
               </li>
             </ul>
           </p>
+          <p>The way we envisioned using these helper classes is:</p>
+          <Code language="css">{`.selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.md .selector {
+  flex-direction: row;
+}`}</Code>
+          <p>
+            Note that these classes would only work if the browser has
+            JavaScript enabled, as they are added using{" "}
+            <a href="https://github.com/dashvars/dashvar/blob/master/src/helpers/dashvar-helpers.js">
+              a small helper script (source code)
+            </a>
+            .
+          </p>
+        </Section>
+        <Section>
+          <Heading2>Interactive example</Heading2>
           <p>
             The following example should illustrate the usage of the body
             classes:
