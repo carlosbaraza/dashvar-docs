@@ -6,33 +6,32 @@ type Props = {
   variable: Variable;
 };
 
-export const TransitionItem: FC<Props> = (props) => {
+export const TransitionDurationItem: FC<Props> = (props) => {
   const description = props.variable.value.replace(/\), /g, "),\n");
 
   return (
     <>
-      <div className="TransitionItem">
-        <VarLabel subtitle={description} subtitleColor="var(--gray-400)">
-          {props.variable.key}
-        </VarLabel>
+      <div className="TransitionDurationItem">
+        <VarLabel subtitle={description}>{props.variable.key}</VarLabel>
       </div>
 
       <style jsx>{`
-        .TransitionItem {
+        .TransitionDurationItem {
           display: flex;
-          justify-content: flex-start;
           max-width: 100%;
+          justify-content: center;
           overflow: scroll;
-          text-align: left;
+          text-align: center;
           background: var(--white);
           padding: var(--size-05);
           border-radius: var(--size-04);
           box-shadow: var(--box-shadow-3);
-          transition: ${props.variable.value};
+          transition: var(--transition-all);
+          transition-duration: ${props.variable.value};
           border: var(--border-width-4) solid transparent;
         }
 
-        .TransitionItem:hover {
+        .TransitionDurationItem:hover {
           background: var(--yellow-100);
           color: var(--white);
           transform: scale(1.05);

@@ -75,14 +75,14 @@ export const Navigation: FC<Props> = (props) => {
         <div className="section">
           <SectionTitle>Transitions and Animations</SectionTitle>
           <NavigationItem href="/docs/transition">Transition</NavigationItem>
-          <NavigationItem disabled href="/docs/transition-duration">
-            Transition Duration (WIP)
+          <NavigationItem href="/docs/transition-duration">
+            Transition Duration
           </NavigationItem>
-          <NavigationItem disabled href="/docs/transition-timing-function">
-            Transition Timing Function (WIP)
+          <NavigationItem href="/docs/transition-timing-function">
+            Transition Timing Function
           </NavigationItem>
-          <NavigationItem disabled href="/docs/transition-delay">
-            Transition Delay (WIP)
+          <NavigationItem href="/docs/transition-delay">
+            Transition Delay
           </NavigationItem>
           <NavigationItem disabled href="/docs/animation">
             Animation (WIP)

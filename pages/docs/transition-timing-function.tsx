@@ -1,34 +1,41 @@
 import Head from "next/head";
+import Link from "next/link";
 import React from "react";
 import { Code } from "../../components/docs/Code";
 import { Heading1 } from "../../components/docs/Heading1";
 import { Heading2 } from "../../components/docs/Heading2";
 import { Layout } from "../../components/docs/Layout";
 import { Section } from "../../components/docs/Section";
-import { TransitionShowcase } from "../../components/docs/transition/TransitionShowcase";
+import { TransitionTimingFunctionShowcase } from "../../components/docs/transition-timing-function/TransitionTimingFunctionShowcase";
 import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
-export const DocsTransitionPage = (props: Props) => {
+export const DocsTransitionDurationPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Transition | Dashvar Docs</title>
+        <title>Transition Duration | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>
-          <Heading1>Transition</Heading1>
+          <Heading1>Transition Duration</Heading1>
           <p>
-            Dashvar covers most of the common <code>transition</code>{" "}
-            configurations. Just use the transition variable for the kind of
-            properties you want to transition. Then you can apply changes to
-            those properties with other selectors or modifiers.
+            Dashvar covers most of the common{" "}
+            <code>transition-timing-function</code> configurations. We recommend
+            using the{" "}
+            <Link href="/docs/transition">
+              <a>transition variables</a>
+            </Link>{" "}
+            and then applying the changes to the{" "}
+            <code>transition-timing-function</code> as the following example
+            illustrates:
           </p>
 
           <Code language="css">{`.selector {
   background: var(--gray-100);
   transition: var(--transition-all);
+  transition-timing-function: var(--transition-timing-function-ease-out);
 }
 
 .selector:hover {
@@ -36,8 +43,8 @@ export const DocsTransitionPage = (props: Props) => {
 }`}</Code>
         </Section>
         <Section>
-          <Heading2>Transition variables</Heading2>
-          <TransitionShowcase />
+          <Heading2>Transition timing function variables</Heading2>
+          <TransitionTimingFunctionShowcase />
         </Section>
         <Section>
           <Heading2>Interactive Example</Heading2>
@@ -56,4 +63,4 @@ export const DocsTransitionPage = (props: Props) => {
   );
 };
 
-export default DocsTransitionPage;
+export default DocsTransitionDurationPage;
