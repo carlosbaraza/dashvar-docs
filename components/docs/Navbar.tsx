@@ -8,7 +8,6 @@ type Props = {};
 
 export const Navbar: FC<Props> = (props) => {
   const isMobile = useIsMobile();
-  console.log(isMobile);
 
   return (
     <>

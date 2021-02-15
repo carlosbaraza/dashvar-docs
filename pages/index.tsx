@@ -6,6 +6,7 @@ import MoreStories from "../components/blog/more-stories";
 import { Example } from "../components/landing/Example";
 import { Header } from "../components/landing/Header";
 import { Layout } from "../components/landing/Layout";
+import { TutorialSection } from "../components/landing/TutorialSection";
 import { WhySection } from "../components/landing/WhySection";
 import { getAllPosts } from "../lib/api";
 import Post from "../types/post";
@@ -29,6 +30,8 @@ const Index = ({ allPosts }: Props) => {
         <Example />
 
         <WhySection />
+
+        <TutorialSection />
 
         <div>
           <Intro />

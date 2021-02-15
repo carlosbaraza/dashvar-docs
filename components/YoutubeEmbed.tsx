@@ -1,8 +1,8 @@
 import React, { FC, useEffect, useRef, useState } from "react";
 
-type Props = { id: string };
+type Props = { id: string; height?: number };
 
-const defaultProps = {};
+const defaultProps = { height: 500 };
 
 export const YoutubeEmbed: FC<Props> = (props) => {
   const ref = useRef<HTMLDivElement>(null);
@@ -12,7 +12,7 @@ export const YoutubeEmbed: FC<Props> = (props) => {
     const el = ref.current;
     if (el && !inited) {
       el.innerHTML = `
-      <iframe height="500" style="width: 100%;" src="https://www.youtube.com/embed/${props.id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe height="${props.height}" style="width: 100%;" src="https://www.youtube.com/embed/${props.id}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         `;
       setInited(true);
     }
