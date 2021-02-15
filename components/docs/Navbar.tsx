@@ -8,6 +8,7 @@ type Props = {};
 
 export const Navbar: FC<Props> = (props) => {
   const isMobile = useIsMobile();
+  console.log(isMobile);
 
   return (
     <>
@@ -40,7 +41,6 @@ export const Navbar: FC<Props> = (props) => {
         .logo {
           display: flex;
           align-items: center;
-          padding: var(--size-05);
           position: relative;
           cursor: pointer;
         }

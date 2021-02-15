@@ -14,20 +14,10 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem href="/docs/card-component-example">
             Card Component Example
           </NavigationItem>
-          <NavigationItem href="/docs/base-styles">Base Styles</NavigationItem>
           <NavigationItem href="/docs/vs-code-extension">
             VS Code Extension
           </NavigationItem>
-        </div>
-
-        <div className="section">
-          <SectionTitle>Customizing</SectionTitle>
-          <NavigationItem disabled href="/docs/customizing">
-            Customizing (WIP)
-          </NavigationItem>
-          <NavigationItem disabled href="/docs/custom-export">
-            Custom Export (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/base-styles">Base Styles</NavigationItem>
         </div>
 
         <div className="section">
@@ -76,6 +66,13 @@ export const Navigation: FC<Props> = (props) => {
         </div>
 
         <div className="section">
+          <SectionTitle>Helpers</SectionTitle>
+          <NavigationItem href="/docs/media-body-classes">
+            Media body classes
+          </NavigationItem>
+        </div>
+
+        <div className="section">
           <SectionTitle>Transitions and Animations</SectionTitle>
           <NavigationItem disabled href="/docs/transition">
             Transition (WIP)
@@ -95,9 +92,12 @@ export const Navigation: FC<Props> = (props) => {
         </div>
 
         <div className="section">
-          <SectionTitle>Helpers</SectionTitle>
-          <NavigationItem href="/docs/media-body-classes">
-            Media body classes
+          <SectionTitle>Customizing</SectionTitle>
+          <NavigationItem disabled href="/docs/customizing">
+            Customizing (WIP)
+          </NavigationItem>
+          <NavigationItem disabled href="/docs/custom-export">
+            Custom Export (WIP)
           </NavigationItem>
         </div>
 
@@ -116,7 +116,7 @@ export const Navigation: FC<Props> = (props) => {
         .Navigation {
           display: flex;
           flex-direction: column;
-          padding: var(--size-07) 0;
+          padding: var(--size-07) 0 var(--size-10) 0;
         }
 
         .section {
