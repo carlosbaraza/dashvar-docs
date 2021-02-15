@@ -4,6 +4,8 @@
 
 # [dashvar-docs](https://dashvar.com)
 
+[![GitHub license](https://img.shields.io/github/license/carlosbaraza/dashvar-docs)](https://github.com/carlosbaraza/dashvar-docs/blob/master/LICENSE)
+
 This repository holds the documentation for [dashvar](https://github.com/dashvars/dashvar). Dashvar is a CSS Variables Library. Strong defaults for good looking designs. Inspired by Tailwind CSS.
 
 [Full documentation](https://dashvar.com)
