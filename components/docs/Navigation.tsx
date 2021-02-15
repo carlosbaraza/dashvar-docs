@@ -100,7 +100,7 @@ export const Navigation: FC<Props> = (props) => {
         </div>
 
         <div className="section">
-          <SectionTitle>NPM Module</SectionTitle>
+          <SectionTitle>Module</SectionTitle>
           <NavigationItem disabled href="/docs/js-variables">
             JS Variables (WIP)
           </NavigationItem>
