@@ -7,10 +7,14 @@ type Props = {
 };
 
 export const BoxShadowItem: FC<Props> = (props) => {
+  const description = props.variable.value.replace(/\), /g, "),\n");
+
   return (
     <>
       <div className="BoxShadowItem">
-        <VarLabel>{props.variable.key}</VarLabel>
+        <VarLabel subtitle={description} subtitleColor="var(--gray-400)">
+          {props.variable.key}
+        </VarLabel>
       </div>
 
       <style jsx>{`

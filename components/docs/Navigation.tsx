@@ -74,9 +74,7 @@ export const Navigation: FC<Props> = (props) => {
 
         <div className="section">
           <SectionTitle>Transitions and Animations</SectionTitle>
-          <NavigationItem disabled href="/docs/transition">
-            Transition (WIP)
-          </NavigationItem>
+          <NavigationItem href="/docs/transition">Transition</NavigationItem>
           <NavigationItem disabled href="/docs/transition-duration">
             Transition Duration (WIP)
           </NavigationItem>

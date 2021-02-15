@@ -41,6 +41,7 @@ export const VarLabel: FC<Props> = (props) => {
           color: ${props.subtitleColor
             ? props.subtitleColor
             : "var(--gray-600)"};
+          white-space: pre;
         }
       `}</style>
     </>
