@@ -8,15 +8,15 @@ export const WhySection: FC<Props> = (props) => {
       <div className="WhySection">
         <h2>Why does it matter?</h2>
         <ul>
-          <li>Less cognitive load.</li>
+          <li>Less cognitive load</li>
           <li>
-            Only choose among a few options (colour palette, sizing system, and
-            others).
+            Don't play the pixel or colour game, just choose among a few well
+            thought ones
           </li>
-          <li>Well engineered design system.</li>
-          <li>Consistent user interfaces.</li>
-          <li>Don't relearn CSS by picking up another framework.</li>
-          <li>Just CSS Variables, no classes to memorize.</li>
+          <li>Well engineered Design System</li>
+          <li>Consistent User Interfaces</li>
+          <li>Don't relearn CSS by memorizing classes</li>
+          <li>Just CSS Variables</li>
         </ul>
       </div>
 
@@ -58,9 +58,16 @@ export const WhySection: FC<Props> = (props) => {
           break-inside: avoid;
           margin-bottom: var(--size-06);
           padding: var(--size-06);
-          background: var(--yellow-200);
-          color: var(--yellow-900);
+          background: linear-gradient(
+            200deg,
+            var(--yellow-100),
+            var(--red-100)
+          );
+          font-family: var(--font-family-mono);
+          color: var(--black);
           font-size: var(--font-size-5);
+          line-height: var(--line-height-5);
+          letter-spacing: var(--letter-spacing-1);
           font-weight: var(--font-weight-bold);
           border-radius: var(--border-radius-5);
         }

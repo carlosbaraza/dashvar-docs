@@ -1,4 +1,4 @@
-import Alert from "./alert";
+import { Navbar } from "../docs/Navbar";
 import Footer from "./footer";
 
 type Props = {
@@ -10,7 +10,9 @@ const Layout = ({ preview, children }: Props) => {
   return (
     <>
       <div className="min-h-screen">
-        <Alert preview={preview} />
+        <div className="container mx-auto px-5">
+          <Navbar />
+        </div>
         <main>{children}</main>
       </div>
       <Footer />

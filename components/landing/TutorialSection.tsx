@@ -4,13 +4,18 @@ import { YoutubeEmbed } from "../YoutubeEmbed";
 type Props = {};
 
 export const TutorialSection: FC<Props> = (props) => {
-  const youtubeHeight =
-    typeof window !== "undefined" ? window.innerWidth / 1.77 : 500;
+  const width =
+    typeof window !== "undefined"
+      ? window.innerWidth < 1400
+        ? window.innerWidth
+        : 1400
+      : 800;
+  const youtubeHeight = width / 1.77;
 
   return (
     <>
       <section className="TutorialSection">
-        <h2>Getting starter tutorial</h2>
+        <h2>Getting Started Tutorial</h2>
         <YoutubeEmbed id="w3NCZtUl8lU" height={youtubeHeight} />
       </section>
 

@@ -2,7 +2,7 @@
 title: "Sizing and Spacing System"
 excerpt: "Having a good Sizing and Spacing System is key to limit the amount of choices you have when you are building a new UI. Read more about choosing the right system."
 coverImage: "/assets/blog/sizing-and-spacing-system/sizing-cover.png"
-date: "2021-02-08T12:35:07.322Z"
+date: "2021-02-15T12:35:07.322Z"
 author:
   name: Carlos Baraza
   picture: "/assets/blog/authors/carlos-baraza.jpg"

@@ -34,11 +34,11 @@ export const Layout: FC<Props> = (props) => {
         }
 
         .Layout__container > :global(* + *) {
-          margin-top: var(--size-10);
+          margin-top: var(--size-11);
         }
 
         .Layout > :global(* + *) {
-          margin-top: var(--size-08);
+          margin-top: var(--size-10);
         }
       `}</style>
     </>

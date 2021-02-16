@@ -6,6 +6,7 @@ import MoreStories from "../components/blog/more-stories";
 import { Example } from "../components/landing/Example";
 import { Header } from "../components/landing/Header";
 import { Layout } from "../components/landing/Layout";
+import { MailchimpHorizontal } from "../components/landing/MailchimpHorizontal";
 import { TutorialSection } from "../components/landing/TutorialSection";
 import { WhySection } from "../components/landing/WhySection";
 import { getAllPosts } from "../lib/api";
@@ -32,6 +33,8 @@ const Index = ({ allPosts }: Props) => {
         <WhySection />
 
         <TutorialSection />
+
+        <MailchimpHorizontal />
 
         <div>
           <Intro />

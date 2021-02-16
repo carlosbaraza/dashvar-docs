@@ -19,3 +19,10 @@ body {
   background: var(--gray-100);
   font-family: var(--font-family-sans);
 }
+
+input:focus,
+button:focus,
+a:focus {
+  outline: var(--outline-black) !important;
+  outline-offset: var(--outline-offset-1) !important;
+}
