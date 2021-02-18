@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
 import { useIsMobile } from "../../lib/hooks/useIsMobile";
+import { NavbarAccount } from "./NavbarAccount";
 import { NavbarLink } from "./NavbarLink";
 
 type Props = {};
@@ -23,6 +24,8 @@ export const Navbar: FC<Props> = (props) => {
           <NavbarLink href="/docs">
             {isMobile ? "Docs" : "Documentation"}
           </NavbarLink>
+
+          <NavbarAccount />
 
           <a href="https://github.com/dashvars/dashvar" className="icon">
             <FaGithub />

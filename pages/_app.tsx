@@ -1,6 +1,7 @@
 import "dashvar/dist/base.css";
 import "dashvar/dist/dashvar-helpers";
 import "dashvar/dist/dashvar.css";
+import { Provider } from "next-auth/client";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
@@ -23,7 +24,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Meta />
-      <Component {...pageProps} />
+      <Provider session={pageProps.session}>
+        <Component {...pageProps} />
+      </Provider>
     </>
   );
 }
