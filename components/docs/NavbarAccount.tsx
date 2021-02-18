@@ -17,7 +17,7 @@ export const NavbarAccount: FC<Props> = (props) => {
   return (
     <>
       {!session && (
-        <button className="wrapper">
+        <div className="wrapper">
           <Dropdown target={<button className="NavbarAccount">Sign in</button>}>
             <form className="form" onSubmit={handleSubmit}>
               <div className="title">Sign in / Sign up</div>
@@ -38,7 +38,7 @@ export const NavbarAccount: FC<Props> = (props) => {
               </button>
             </form>
           </Dropdown>
-        </button>
+        </div>
       )}
 
       {session && (
