@@ -88,6 +88,8 @@ export const NavbarAccount: FC<Props> = (props) => {
         }
 
         .form-field {
+          display: flex;
+          flex-direction: column;
         }
 
         .form-field > :global(* + *) {
