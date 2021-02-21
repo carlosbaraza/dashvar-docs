@@ -1,13 +1,13 @@
 import Head from "next/head";
-import Link from "next/link";
 import React from "react";
-import { Code } from "../../components/docs/Code";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { Section } from "../../components/docs/Section";
-import { TransitionDelayShowcase } from "../../components/docs/transition-delay/TransitionDelayShowcase";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { Code } from "../../../components/docs/Code";
+import { DocsLink } from "../../../components/docs/DocsLink";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { Section } from "../../../components/docs/Section";
+import { TransitionDelayShowcase } from "../../../components/docs/transition-delay/TransitionDelayShowcase";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
@@ -23,9 +23,9 @@ export const DocsTransitionDurationPage = (props: Props) => {
           <p>
             Dashvar covers most of the common <code>transition-delay</code>{" "}
             configurations. We recommend using the{" "}
-            <Link href="/docs/transition">
+            <DocsLink href="/docs/transition">
               <a>transition variables</a>
-            </Link>{" "}
+            </DocsLink>{" "}
             and then applying the changes to the <code>transition-delay</code>{" "}
             as the following example illustrates:
           </p>

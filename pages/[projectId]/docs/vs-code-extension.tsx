@@ -1,10 +1,10 @@
 import Head from "next/head";
-import Link from "next/link";
 import React from "react";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { Section } from "../../components/docs/Section";
+import { DocsLink } from "../../../components/docs/DocsLink";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { Section } from "../../../components/docs/Section";
 
 type Props = {};
 
@@ -39,9 +39,9 @@ const DocsIndex = (props: Props) => {
           <p>
             You can find an example for the Visual Studio Code extension usage
             in the{" "}
-            <Link href="/docs/card-component-example">
+            <DocsLink href="/docs/card-component-example">
               <a>Card Component Example</a>
-            </Link>
+            </DocsLink>
             . The video showcases how to leverage the power of Visual Studio
             Code snippets to aid during the development using Dashvar CSS
             library.

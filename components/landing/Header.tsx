@@ -20,7 +20,11 @@ export const Header: FC<Props> = (props) => {
             <FaGithub />
             <span>GitHub</span>
           </CtaButton>
-          <CtaButton href="/docs" type="secondary">
+          <CtaButton
+            href="/[projectId]/docs"
+            as="/default/docs"
+            type="secondary"
+          >
             Getting Started
           </CtaButton>
         </div>

@@ -1,11 +1,11 @@
 import Head from "next/head";
-import Link from "next/link";
 import React from "react";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { Section } from "../../components/docs/Section";
-import { CodePenEmbed } from "../../components/landing/CodePenEmbed";
+import { DocsLink } from "../../../components/docs/DocsLink";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { Section } from "../../../components/docs/Section";
+import { CodePenEmbed } from "../../../components/landing/CodePenEmbed";
 
 type Props = {};
 
@@ -71,9 +71,9 @@ const DocsBaseStyles = (props: Props) => {
           <Heading2>How to use Base Styles</Heading2>
           <p>
             We recommend you follow the recommended instructions in the{" "}
-            <Link href="/docs/getting-started">
+            <DocsLink href="/docs">
               <a>Getting Started</a>
-            </Link>{" "}
+            </DocsLink>
             page.
           </p>
         </Section>

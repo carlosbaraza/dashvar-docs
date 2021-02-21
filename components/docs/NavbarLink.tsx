@@ -4,12 +4,13 @@ import React, { FC } from "react";
 type Props = {
   href: string;
   children: string;
+  as?: string;
 };
 
 export const NavbarLink: FC<Props> = (props) => {
   return (
     <>
-      <Link href={props.href}>
+      <Link href={props.href} as={props.as}>
         <a className="NavbarLink">{props.children}</a>
       </Link>
 

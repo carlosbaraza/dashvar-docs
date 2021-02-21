@@ -1,28 +1,28 @@
 import Head from "next/head";
 import React from "react";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { LetterSpacingShowcase } from "../../components/docs/letter-spacing/LetterSpacingShowcase";
-import { Section } from "../../components/docs/Section";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { OpacityShowcase } from "../../../components/docs/opacity/OpacityShowcase";
+import { Section } from "../../../components/docs/Section";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
-export const DocsBoxShadowPage = (props: Props) => {
+export const DocsOpacityPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Letter Spacing | Dashvar Docs</title>
+        <title>Opacity | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>
-          <Heading1>Letter Spacing</Heading1>
+          <Heading1>Opacity</Heading1>
           <p>
             Dashvar provides a few utility variables for all of your{" "}
-            <code>letter-spacing</code> needs.
+            <code>box-shadow</code> needs.
           </p>
-          <LetterSpacingShowcase />
+          <OpacityShowcase />
         </Section>
         <Section>
           <Heading2>Interactive Example</Heading2>
@@ -41,4 +41,4 @@ export const DocsBoxShadowPage = (props: Props) => {
   );
 };
 
-export default DocsBoxShadowPage;
+export default DocsOpacityPage;

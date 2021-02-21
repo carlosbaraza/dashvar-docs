@@ -16,4 +16,4 @@ We have put some work into creating a library that could be easy to adopt, even 
 
 The library should be easy to implement with multiple stacks. However, we still want to put some work into the examples, and create examples for most common stacks and libraries.
 
-Please, find out more and get started following our [getting started guide](https://dashvar.com/docs/getting-started) and our [creating a simple card tutorial](https://dashvar.com/docs/card-component-example). The tutorial includes a video and interactive examples to make it easier.
+Please, find out more and get started following our [getting started guide](https://dashvar.com/default/docs/getting-started) and our [creating a simple card tutorial](https://dashvar.com/default/docs/card-component-example). The tutorial includes a video and interactive examples to make it easier.

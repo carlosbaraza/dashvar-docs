@@ -1,11 +1,11 @@
 import Head from "next/head";
 import React from "react";
-import { ColourPaletteShowcase } from "../../components/docs/colour-palette/ColourPaletteShowcase";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { Section } from "../../components/docs/Section";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { FontWeightShowcase } from "../../../components/docs/font-weight/FontWeightShowcase";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { Section } from "../../../components/docs/Section";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
@@ -13,17 +13,16 @@ export const DocsBoxShadowPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Colour Palette | Dashvar Docs</title>
+        <title>Font Weight | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>
-          <Heading1>Colour Palette</Heading1>
+          <Heading1>Font Weight</Heading1>
           <p>
-            Dashvar provides CSS Variables for different carefully chosen
-            colours to be distinct from each other and flexible to support
-            different use cases.
+            Dashvar provides a few utility variables for all of your{" "}
+            <code>font-weight</code> needs.
           </p>
-          <ColourPaletteShowcase />
+          <FontWeightShowcase />
         </Section>
         <Section>
           <Heading2>Interactive Example</Heading2>

@@ -1,28 +1,28 @@
 import Head from "next/head";
 import React from "react";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { Section } from "../../components/docs/Section";
-import { ZIndexShowcase } from "../../components/docs/z-index/ZIndexShowcase";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { LetterSpacingShowcase } from "../../../components/docs/letter-spacing/LetterSpacingShowcase";
+import { Section } from "../../../components/docs/Section";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
-export const DocsZIndexPage = (props: Props) => {
+export const DocsBoxShadowPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Z-Index | Dashvar Docs</title>
+        <title>Letter Spacing | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>
-          <Heading1>Z-Index</Heading1>
+          <Heading1>Letter Spacing</Heading1>
           <p>
             Dashvar provides a few utility variables for all of your{" "}
-            <code>z-index</code> needs.
+            <code>letter-spacing</code> needs.
           </p>
-          <ZIndexShowcase />
+          <LetterSpacingShowcase />
         </Section>
         <Section>
           <Heading2>Interactive Example</Heading2>
@@ -41,4 +41,4 @@ export const DocsZIndexPage = (props: Props) => {
   );
 };
 
-export default DocsZIndexPage;
+export default DocsBoxShadowPage;

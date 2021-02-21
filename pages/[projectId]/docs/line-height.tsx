@@ -1,12 +1,12 @@
 import Head from "next/head";
 import React from "react";
-import { Code } from "../../components/docs/Code";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { LineHeightShowcase } from "../../components/docs/line-height/LineHeightShowcase";
-import { Section } from "../../components/docs/Section";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { Code } from "../../../components/docs/Code";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { LineHeightShowcase } from "../../../components/docs/line-height/LineHeightShowcase";
+import { Section } from "../../../components/docs/Section";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 

@@ -21,7 +21,7 @@ export const Navbar: FC<Props> = (props) => {
           </Link>
         </div>
         <div className="inner">
-          <NavbarLink href="/docs">
+          <NavbarLink href="/[projectId]/docs" as="/default/docs">
             {isMobile ? "Docs" : "Documentation"}
           </NavbarLink>
 

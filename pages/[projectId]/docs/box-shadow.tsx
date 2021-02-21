@@ -1,28 +1,28 @@
 import Head from "next/head";
 import React from "react";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { OpacityShowcase } from "../../components/docs/opacity/OpacityShowcase";
-import { Section } from "../../components/docs/Section";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { BoxShadowShowcase } from "../../../components/docs/box-shadow/BoxShadowShowcase";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { Section } from "../../../components/docs/Section";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
-export const DocsOpacityPage = (props: Props) => {
+export const DocsBoxShadowPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Opacity | Dashvar Docs</title>
+        <title>Box Shadow | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>
-          <Heading1>Opacity</Heading1>
+          <Heading1>Box Shadow</Heading1>
           <p>
             Dashvar provides a few utility variables for all of your{" "}
             <code>box-shadow</code> needs.
           </p>
-          <OpacityShowcase />
+          <BoxShadowShowcase />
         </Section>
         <Section>
           <Heading2>Interactive Example</Heading2>
@@ -41,4 +41,4 @@ export const DocsOpacityPage = (props: Props) => {
   );
 };
 
-export default DocsOpacityPage;
+export default DocsBoxShadowPage;

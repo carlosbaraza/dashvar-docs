@@ -1,24 +1,24 @@
 import Head from "next/head";
 import React from "react";
-import { Code } from "../../components/docs/Code";
-import { Heading1 } from "../../components/docs/Heading1";
-import { Heading2 } from "../../components/docs/Heading2";
-import { Layout } from "../../components/docs/Layout";
-import { OutlineShowcase } from "../../components/docs/outline/OutlineShowcase";
-import { Section } from "../../components/docs/Section";
-import { CodeSandboxEmbed } from "../../components/landing/CodeSandboxEmbed";
+import { Code } from "../../../components/docs/Code";
+import { Heading1 } from "../../../components/docs/Heading1";
+import { Heading2 } from "../../../components/docs/Heading2";
+import { Layout } from "../../../components/docs/Layout";
+import { OutlineOffsetShowcase } from "../../../components/docs/outline-offset/OutlineOffsetShowcase";
+import { Section } from "../../../components/docs/Section";
+import { CodeSandboxEmbed } from "../../../components/landing/CodeSandboxEmbed";
 
 type Props = {};
 
-export const DocsOutlinePage = (props: Props) => {
+export const DocsOutlineOffsetPage = (props: Props) => {
   return (
     <>
       <Head>
-        <title>Outline | Dashvar Docs</title>
+        <title>Outline Offset | Dashvar Docs</title>
       </Head>
       <Layout>
         <Section>
-          <Heading1>Outline</Heading1>
+          <Heading1>Outline Offset</Heading1>
           <p>
             Dashvar provides some utility variables for <code>outline</code>. We
             recommend using them in combination with <code>outline-offset</code>{" "}
@@ -28,7 +28,7 @@ export const DocsOutlinePage = (props: Props) => {
   outline-offset: var(--outline-offset-1);
   outline: var(--outline-black);
 }`}</Code>
-          <OutlineShowcase />
+          <OutlineOffsetShowcase />
         </Section>
         <Section>
           <Heading2>Interactive Example</Heading2>
@@ -47,4 +47,4 @@ export const DocsOutlinePage = (props: Props) => {
   );
 };
 
-export default DocsOutlinePage;
+export default DocsOutlineOffsetPage;

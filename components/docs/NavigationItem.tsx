@@ -1,9 +1,8 @@
-import Link from "next/link";
 import React, { FC, ReactNode } from "react";
+import { DocsLink, DocUrl } from "./DocsLink";
 
 type Props = {
-  href: string;
-  as?: string;
+  href: DocUrl;
   children: ReactNode;
   disabled?: boolean;
 };
@@ -14,9 +13,9 @@ export const NavigationItem: FC<Props> = (props) => {
       {props.disabled ? (
         <div className="NavigationItem disabled">{props.children}</div>
       ) : (
-        <Link href={props.href} as={props.as}>
+        <DocsLink href={props.href}>
           <a className="NavigationItem">{props.children}</a>
-        </Link>
+        </DocsLink>
       )}
 
       <style jsx>{`

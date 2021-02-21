@@ -17,6 +17,6 @@ Another great benefit that comes with using a sizing system is that your UIs and
 
 ## Dashvar Sizing System
 
-You can read more about [Dashvar's Spacing and Sizing System in the documentation](https://dashvar.com/docs/sizing-system).
+You can read more about [Dashvar's Spacing and Sizing System in the documentation](https://dashvar.com/default/docs/sizing-system).
 
 Just a few carefully selected CSS Variables could make a huge impact in your development experience.

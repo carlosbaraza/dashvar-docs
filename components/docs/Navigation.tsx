@@ -84,27 +84,27 @@ export const Navigation: FC<Props> = (props) => {
           <NavigationItem href="/docs/transition-delay">
             Transition Delay
           </NavigationItem>
-          <NavigationItem disabled href="/docs/animation">
+          <NavigationItem disabled href="/docs">
             Animation (WIP)
           </NavigationItem>
         </div>
 
         <div className="section">
           <SectionTitle>Customizing</SectionTitle>
-          <NavigationItem disabled href="/docs/customizing">
+          <NavigationItem disabled href="/docs">
             Customizing (WIP)
           </NavigationItem>
-          <NavigationItem disabled href="/docs/custom-export">
+          <NavigationItem disabled href="/docs">
             Custom Export (WIP)
           </NavigationItem>
         </div>
 
         <div className="section">
           <SectionTitle>Module</SectionTitle>
-          <NavigationItem disabled href="/docs/js-variables">
+          <NavigationItem disabled href="/docs">
             JS Variables (WIP)
           </NavigationItem>
-          <NavigationItem disabled href="/docs/js-variables">
+          <NavigationItem disabled href="/docs">
             Generate CSS (WIP)
           </NavigationItem>
         </div>
