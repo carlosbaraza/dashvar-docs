@@ -5,6 +5,7 @@ import { FiMenu } from "react-icons/fi";
 import { Footer } from "../Footer";
 import { Navbar } from "./Navbar";
 import { Navigation } from "./Navigation";
+import { VariableEditorProvider } from "./VariableEditor/VariableEditorProvider";
 
 type Props = { children: ReactNode };
 
@@ -35,24 +36,26 @@ export const Layout: FC<Props> = (props) => {
 
   return (
     <>
-      <div className="Layout">
-        <div className="navbar">
-          <Navbar />
-        </div>
-        <div className="Layout__Container">
-          <div className="navigation-overlay" onClick={closeNavigation} />
-          <div ref={navigationEl} className="navigation">
-            <Navigation />
+      <VariableEditorProvider>
+        <div className="Layout">
+          <div className="navbar">
+            <Navbar />
           </div>
-          <div className="content">
-            {props.children}
-            <Footer />
+          <div className="Layout__Container">
+            <div className="navigation-overlay" onClick={closeNavigation} />
+            <div ref={navigationEl} className="navigation">
+              <Navigation />
+            </div>
+            <div className="content">
+              {props.children}
+              <Footer />
+            </div>
+            <button onClick={openNavigation} className="menu-button">
+              <FiMenu />
+            </button>
           </div>
-          <button onClick={openNavigation} className="menu-button">
-            <FiMenu />
-          </button>
         </div>
-      </div>
+      </VariableEditorProvider>
 
       <style jsx>{`
         .Layout {
