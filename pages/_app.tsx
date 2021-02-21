@@ -5,6 +5,7 @@ import { Provider } from "next-auth/client";
 import { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import React, { useEffect } from "react";
+import { CoreDataProvider } from "../components/docs/CoreDataProvider";
 import Meta from "../components/meta";
 import { pageview } from "../lib/gtag";
 import "../styles/index.css";
@@ -25,7 +26,9 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Meta />
       <Provider session={pageProps.session}>
-        <Component {...pageProps} />
+        <CoreDataProvider>
+          <Component {...pageProps} />
+        </CoreDataProvider>
       </Provider>
     </>
   );

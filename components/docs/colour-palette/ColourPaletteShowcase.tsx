@@ -1,17 +1,45 @@
-import { colors as blueColors } from "dashvar/lib/variables/colors/blue";
-import { colors as grayColors } from "dashvar/lib/variables/colors/gray";
-import { colors as greenColors } from "dashvar/lib/variables/colors/green";
-import { colors as indigoColors } from "dashvar/lib/variables/colors/indigo";
-import { colors as pinkColors } from "dashvar/lib/variables/colors/pink";
-import { colors as purpleColors } from "dashvar/lib/variables/colors/purple";
-import { colors as redColors } from "dashvar/lib/variables/colors/red";
-import { colors as yellowColors } from "dashvar/lib/variables/colors/yellow";
+import { colors as blueColorsDefault } from "dashvar/lib/variables/colors/blue";
+import { colors as grayColorsDefault } from "dashvar/lib/variables/colors/gray";
+import { colors as greenColorsDefault } from "dashvar/lib/variables/colors/green";
+import { colors as indigoColorsDefault } from "dashvar/lib/variables/colors/indigo";
+import { colors as pinkColorsDefault } from "dashvar/lib/variables/colors/pink";
+import { colors as purpleColorsDefault } from "dashvar/lib/variables/colors/purple";
+import { colors as redColorsDefault } from "dashvar/lib/variables/colors/red";
+import { colors as yellowColorsDefault } from "dashvar/lib/variables/colors/yellow";
 import React, { FC } from "react";
+import { useCategoryVariables } from "../../../lib/hooks/useCategoryVariables";
 import { ColourPalette } from "./ColourPalette";
 
 type Props = {};
 
 export const ColourPaletteShowcase: FC<Props> = (props) => {
+  const variables = useCategoryVariables("color");
+
+  const grayColors = variables.length
+    ? variables.filter((v) => v.key.includes("--gray"))
+    : grayColorsDefault;
+  const redColors = variables.length
+    ? variables.filter((v) => v.key.includes("--red"))
+    : redColorsDefault;
+  const yellowColors = variables.length
+    ? variables.filter((v) => v.key.includes("--yellow"))
+    : yellowColorsDefault;
+  const greenColors = variables.length
+    ? variables.filter((v) => v.key.includes("--green"))
+    : greenColorsDefault;
+  const blueColors = variables.length
+    ? variables.filter((v) => v.key.includes("--blue"))
+    : blueColorsDefault;
+  const indigoColors = variables.length
+    ? variables.filter((v) => v.key.includes("--indigo"))
+    : indigoColorsDefault;
+  const purpleColors = variables.length
+    ? variables.filter((v) => v.key.includes("--purple"))
+    : purpleColorsDefault;
+  const pinkColors = variables.length
+    ? variables.filter((v) => v.key.includes("--pink"))
+    : pinkColorsDefault;
+
   return (
     <>
       <div className="ColourPaletteShowcase">

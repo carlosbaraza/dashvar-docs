@@ -2,6 +2,8 @@ import Link from "next/link";
 import { FC } from "react";
 import { FaGithub } from "react-icons/fa";
 import { useIsMobile } from "../../lib/hooks/useIsMobile";
+import { NavbarFork } from "../NavbarFork";
+import { useCoreData } from "./CoreDataProvider";
 import { NavbarAccount } from "./NavbarAccount";
 import { NavbarLink } from "./NavbarLink";
 
@@ -9,6 +11,7 @@ type Props = {};
 
 export const Navbar: FC<Props> = (props) => {
   const isMobile = useIsMobile();
+  const { project } = useCoreData();
 
   return (
     <>
@@ -21,6 +24,8 @@ export const Navbar: FC<Props> = (props) => {
           </Link>
         </div>
         <div className="inner">
+          <NavbarFork />
+
           <NavbarLink href="/[projectId]/docs" as="/default/docs">
             {isMobile ? "Docs" : "Documentation"}
           </NavbarLink>
