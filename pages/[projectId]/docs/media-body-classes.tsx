@@ -30,7 +30,7 @@ if (screenWidth > 640) bodyClasses.push("sm");
 if (screenWidth > 768) bodyClasses.push("md");
 if (screenWidth > 1024) bodyClasses.push("lg");
 if (screenWidth > 1280) bodyClasses.push("xl");
-if (screenWidth > 1536) bodyClasses.push("2xl");`}</Code>
+if (screenWidth > 1536) bodyClasses.push("xxl");`}</Code>
           <p>
             <a href="https://github.com/dashvars/dashvar/blob/master/src/helpers/dashvar-helpers.js">
               See full source code, available on the official GitHub repository
@@ -51,7 +51,7 @@ if (screenWidth > 1536) bodyClasses.push("2xl");`}</Code>
               <li>
                 If the screen was 2000px wide, the body would have six extra
                 classes: <code>xs</code>, <code>sm</code>, <code>md</code>,{" "}
-                <code>lg</code>, <code>xl</code> and <code>2xl</code>
+                <code>lg</code>, <code>xl</code> and <code>xxl</code>
               </li>
             </ul>
           </p>
