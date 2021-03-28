@@ -6,7 +6,7 @@ export const Footer: FC<Props> = (props) => {
   return (
     <>
       <div className="Footer">
-        Made with <span className="heart">(yes... surely you know)</span> by{" "}
+        Made with <span className="heart">(you name it)</span> by{" "}
         <a href="https://carlosbaraza.com">Carlos Baraza</a>
       </div>
 
