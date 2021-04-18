@@ -51,7 +51,7 @@ if (screenWidth > 1536) bodyClasses.push("xxl");`}</Code>
               <li>
                 If the screen was 2000px wide, the body would have six extra
                 classes: <code>xs</code>, <code>sm</code>, <code>md</code>,{" "}
-                <code>lg</code>, <code>xl</code> and <code>2xl</code>
+                <code>lg</code>, <code>xl</code> and <code>xxl</code>
               </li>
             </ul>
           </p>
