@@ -30,7 +30,7 @@ if (screenWidth > 640) bodyClasses.push("sm");
 if (screenWidth > 768) bodyClasses.push("md");
 if (screenWidth > 1024) bodyClasses.push("lg");
 if (screenWidth > 1280) bodyClasses.push("xl");
-if (screenWidth > 1536) bodyClasses.push("2xl");`}</Code>
+if (screenWidth > 1536) bodyClasses.push("xxl");`}</Code>
           <p>
             <a href="https://github.com/dashvars/dashvar/blob/master/src/helpers/dashvar-helpers.js">
               See full source code, available on the official GitHub repository
